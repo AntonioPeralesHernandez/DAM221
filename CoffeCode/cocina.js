@@ -35,7 +35,14 @@ function listar(){
 const readline = require("readline").createInterface({
     input: process.stdin, output: process.stdout
 });
-readline.question("1 Agregar | 2 Editar | 3 Eliminar | 4 Listar | 5 Salir", opcion =>{
+readline.question(`
+1. Agregar producto
+2. Editar producto
+3. Eliminar producto
+4. Listar productos
+5. Salir
+
+Selecciona una opción: `, opcion =>{
     if (opcion === "1"){
         readline.question("Nombre: ", nombre =>
         readline.question("Precio: ", precio => {
