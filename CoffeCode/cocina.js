@@ -1,3 +1,4 @@
+//Cocina
 let productos =[
     {id:1, nombre: "Café sin azucar", precio: 40, categoria: "bebida"},
     {id:2, nombre: "Café Italiano", precio: 60, categoria:"bebida"},
@@ -144,3 +145,4 @@ function buscarProductos(tipo){
     });
 }
 mostrarMenu();
+
