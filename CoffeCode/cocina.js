@@ -2,9 +2,7 @@
 let productos =[
     {id:1, nombre: "Café sin azucar", precio: 40, categoria: "bebida"},
     {id:2, nombre: "Café Italiano", precio: 60, categoria:"bebida"},
-    {id:3, nombre: "Pan de muertos", precio: 15, categoria:"postre"},
-    {id:4, nombre: "Pastel chocolate", precio: 50, categoria:"postre"},
-    {id:5, nombre: "Café con leche ", precio: 42, categoria:"bebida"},
+    {id:3, nombre: "Pan de muertos", precio: 15, categoria:"postre"}
 ];
 
 function agregar(nombre, precio, categoria){
