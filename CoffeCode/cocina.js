@@ -1,13 +1,14 @@
 let productos =[
-    {id:1, nombre: "Café Americano", precio: 40},
-    {id:2, nombre: "Café Italiano", precio: 45},
-    {id:3, nombre: "Pan de muertos", precio: 15}
+    {id:1, nombre: "Café sin azucar", precio: 40, categoria: "bebida"},
+    {id:2, nombre: "Café Italiano", precio: 45, categoria:"bebida"},
+    {id:3, nombre: "Pan de muertos", precio: 15, categoria:"postre"},
 ];
 function agregar(nombre, precio){
     productos.push({
         id: productos.length + 1,
         nombre: nombre,
-        precio: precio
+        precio: precio,
+        categoria: categoria
     });
 }
 function editar(id, nombre, precio){
@@ -16,6 +17,7 @@ function editar(id, nombre, precio){
     if(producto){
         producto.nombre = nombre;
         producto.precio = precio;
+        producto.categoria = categoria;
 
     }
 }
@@ -28,10 +30,12 @@ function listar(){
 
     productos.forEach(p => {
         console.log(
-    `ID: ${p.id} | Nombre: ${p.nombre} | Precio: ${p.precio}`
+    `ID: ${p.id} | Nombre: ${p.nombre} | Precio: ${p.precio} | Categoria: ${p.categoria}`
         );
     });
 }
+
+
 const readline = require("readline").createInterface({
     input: process.stdin, output: process.stdout
 });
@@ -40,13 +44,15 @@ readline.question(`
 2. Editar producto
 3. Eliminar producto
 4. Listar productos
-5. Salir
+5. Buscar producto
+6. Salir
 
 Selecciona una opción: `, opcion =>{
     if (opcion === "1"){
         readline.question("Nombre: ", nombre =>
-        readline.question("Precio: ", precio => {
-            agregar(nombre, Number(precio));
+        readline.question("Precio: ", precio => 
+        readline.question("Categoria: ", categoria => {
+            agregar(nombre, Number(precio), categoria);
             listar();
             readline.close();
         }));
@@ -75,3 +81,4 @@ else if (opcion === "5"){
     readline.close();
 }
 });
+
