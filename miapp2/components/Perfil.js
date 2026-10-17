@@ -1,12 +1,23 @@
-import {Text, View} from 'react-native';
+import {Text, View, StyleSheet, Button} from 'react-native';
+import {useState}from 'react';
 
-export const Perfil = () => {
+
+export const Perfil = ({nombre,carrera,materia,cuatri}) => {
+    const[mostrar,setMostrar]= useState(false);
+
+
     return(
         <View>
-            <Text>Antonio Perales Hernández</Text>
-            <Text>Ingenieria en Tecnologías de la Información e Innovación Digital</Text>
-            <Text>Desarrollo de Aplicaciones Móviles</Text>
-            <Text>Cuarto Cuatrimestre 4°</Text>
+            <Text>{nombre}</Text>
+
+            {mostrar &&
+            <>  
+            <Text>{carrera}</Text>
+            <Text>{materia}</Text>
+            <Text>{cuatri}</Text>
+            </>
+            } 
+            <Button title=" Ver Perfil" onPress={()=>setMostrar(!mostrar) }/>
         </View>
     )
 }

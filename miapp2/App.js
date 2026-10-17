@@ -9,20 +9,10 @@ import {Perfil} from './components/Perfil';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hola mundo React Native!</Text>
-      <Image source={require('./assets/wave.png')} />
-
-      <Text>-------------------------------------------------------------</Text>
       
-      <Saludo />
-
-      <Text>-------------------------------------------------------------</Text>
-      
-      <Saludo2 />
-
-      <Text>-------------------------------------------------------------</Text>
-      
-      <Perfil />
+      <Perfil nombre="Antonio" carrera="ITIID" materia="DAM" cuatri="4"/>
+      <Perfil nombre="Diego" carrera="ITIID" materia="DAM" cuatri="4"/>
+      <Perfil nombre="Damian" carrera="ITIID" materia="DAM" cuatri="4"/>
       
       <StatusBar style="auto" />
     </View>
