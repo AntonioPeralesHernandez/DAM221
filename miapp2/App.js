@@ -23,11 +23,12 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'row',
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
   },
-  tarjetas1:{backgroundColor: 'pink'},
-  tarjetas2:{backgroundColor: 'yellow'},
-  tarjetas3:{backgroundColor: 'orange'},
+  tarjetas1:{backgroundColor: '#676faf'},
+  tarjetas2:{backgroundColor: '#6eaf9c'},
+  tarjetas3:{backgroundColor: '#d66860'},
 });

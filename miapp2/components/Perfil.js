@@ -29,12 +29,12 @@ const estilos= StyleSheet.create({
     },
     carrera:{
         fontSize: 20,
-        color: 'green',
+        color: '#8d0808',
         fontFamily: 'Roboto',
     },
     otrotexto:{
         fontSize: 18,
-        color: 'blue',
+        color: '#ebd40a',
         fontFamily: 'Courier',
         fontStyle: 'italic',
     },
