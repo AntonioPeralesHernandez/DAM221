@@ -10,9 +10,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       
-      <Perfil nombre="Antonio" carrera="ITIID" materia="DAM" cuatri="4"/>
-      <Perfil nombre="Diego" carrera="ITIID" materia="DAM" cuatri="4"/>
-      <Perfil nombre="Damian" carrera="ITIID" materia="DAM" cuatri="4"/>
+      <Perfil style={styles.tarjetas1} nombre="Antonio" carrera="ITIID" materia="DAM" cuatri="4"/>
+      <Perfil style={styles.tarjetas2} nombre="Diego" carrera="ITIID" materia="DAM" cuatri="4"/>
+      <Perfil style={styles.tarjetas3} nombre="Damian" carrera="ITIID" materia="DAM" cuatri="4"/>
       
       <StatusBar style="auto" />
     </View>
@@ -27,4 +27,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  tarjetas1:{backgroundColor: 'pink'},
+  tarjetas2:{backgroundColor: 'yellow'},
+  tarjetas3:{backgroundColor: 'orange'},
 });
