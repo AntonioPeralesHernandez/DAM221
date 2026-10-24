@@ -13,13 +13,13 @@ export default function PressableScreen() {
 
       <Pressable
       //Ejecuta una accion al presionar el boton 
-        onPress={() => setMensaje('¡Botón presionado!')}
+        onPress={() => setMensaje('¡Botón presionado bro!')}
         // Se activa al comenzar la pulsacion 
-        onPressIn={() => console.log('Inicio de pulsación')}
+        onPressIn={() => console.log('Inicio de pulsación bro')}
         // Se desactiva al terminar la pulsacion
-        onPressOut={() => console.log('Fin de pulsación')}
+        onPressOut={() => console.log('Fin de pulsación bro')}
         // Detecta una Pulsacion prolongada 
-        onLongPress={() => setMensaje('Pulsación prolongada')}
+        onLongPress={() => setMensaje('Pulsación prolongada bro, ya tardaste')}
         // Deshabilita la interaccion cuando es "true"
         disabled={false}
         // Permite cambiar la apariencia del boton 
