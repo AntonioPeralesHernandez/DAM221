@@ -3,6 +3,14 @@ import { StyleSheet, View, Text, Button} from 'react-native';
 import { useState } from 'react';
 import TarjetasScreen from './TarjetasScreen';
 import SafeScreen from './SafeScreen';
+import ModalScreen from './ModalScreen';
+import ActivityScreen from './ActivityScreen';
+import FlatListScreen from './FlatListScreen';
+import ImageBackScreen from './ImageBackScreen';
+import PressableScreen from './PressableScreen';
+import TextInputScreen from './TextInputScreen';
+
+
 
 
 //2. Zona Render o Main 
