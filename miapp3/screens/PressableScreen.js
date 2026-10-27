@@ -40,7 +40,7 @@ export default function PressableScreen() {
       </Text>
 
       <Switch
-      // Indica si esta activado o desactivado
+      // Indica si esta activado o desactivado22
         value={activado}
         // Detecta el cambio y actualiza el Estado 
         onValueChange={setActivado}
