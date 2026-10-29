@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
   },
-  separador: {
+  separador: { 
     height: 2,
     backgroundColor: '#cccccc',
     width: '90%',
