@@ -3,14 +3,14 @@ import { useState } from 'react';
 import { StyleSheet, View, Text, TextInput, Button, Alert, ScrollView } from 'react-native';
 
 /*2. Zona Render o main */
-export default function EjemploTextInput() {
+export default function TextInputScreen() {
   const [nombre, setNombre] = useState('');
   const [edad, setEdad] = useState('');
   const [password, setPassword] = useState('');
   const [comentario, setComentario] = useState('');
 
   const alertaSimple = () => {
-    Alert.alert('Hola crayola');
+    Alert.alert('Hola Antonio Good');
   };
 
   const alertaDosBotones = () => {
