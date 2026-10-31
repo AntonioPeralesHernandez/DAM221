@@ -1,5 +1,5 @@
 //1. Zona de importaciones
-import { StyleSheet, View, Text, Button} from 'react-native';
+import { StyleSheet, View, Text, Button, Alert, TextInput} from 'react-native';
 import { useState } from 'react';
 import TarjetasScreen from './TarjetasScreen';
 import SafeScreen from './SafeScreen';
