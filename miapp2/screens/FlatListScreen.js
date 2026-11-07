@@ -37,7 +37,8 @@ export default function FlatListScreen() {
 
         <Text style={styles.sub}>FlatList</Text>
 
-        <FlatList data = {serviciosFlat}
+        <FlatList 
+        data = {serviciosFlat}
         keyExtractor = {(item)=>item.id}
         renderItem = {({item})=>(
           <View style={styles.card}>
